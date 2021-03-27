@@ -44,7 +44,7 @@ found 1 connections:
 	TCP aux info available
 Connection to 192.168.10.100 port 9042 [tcp/*] succeeded!
 ```
-Finally, connection successfully installed from host computer to Cassandra service that listen specific port. 
+Finally, connection successfully established from host computer to Cassandra service that listen specific port. 
 Now, in order to connect to Cassandra through Python, let install Cassandra driver for Python
 ```
 pip install cassandra-driver
