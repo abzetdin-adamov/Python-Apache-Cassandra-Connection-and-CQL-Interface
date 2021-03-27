@@ -9,5 +9,5 @@ sudo lsof -i | grep 9042
 ```
 The following output is what you can expect
 ```
-java       1682 cassandra  134u  IPv4  20375      0t0  TCP *:9042 *(LISTEN)*
+java       1682 cassandra  134u  IPv4  20375      0t0  TCP *:9042 **(LISTEN)**
 ```
