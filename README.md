@@ -49,10 +49,10 @@ Now, in order to connect to Cassandra through Python, let install Cassandra driv
 ```
 pip install cassandra-driver
 ```
-Following Python snippet will retrieve records from Column Family (Table) ```staff``` associated with Keyspace (Databse) ```my_keyspace```
+Following Python snippet will retrieve records from Column Family (Table) ```staff``` associated with Keyspace (Databse) ```my_keyspace```. More detals about setting Cassandra environment are available at [Install and set up Apache Cassandra on CentOS](https://github.com/abzetdin-adamov/Install-and-set-up-Apache-Cassandra-on-CentOS).
 ```python
 from cassandra.cluster import Cluster
-cluster = Cluster(['192.186.56.105'], port=9042)
+cluster = Cluster(['192.186.10.100'], port=9042)
 session = cluster.connect('ada_keyspace', wait_for_all_pools=True)
 session.execute('USE ada_keyspace')
 rows = session.execute('SELECT * FROM staff')
