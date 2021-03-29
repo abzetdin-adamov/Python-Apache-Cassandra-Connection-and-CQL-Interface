@@ -25,7 +25,7 @@ Possibly, port (9042) is blocked by firewall. Using following command, firewall 
 ```
 systemctl stop firewalld
 ```
-If it doesn't help, edit Cassandra settings file ```/etc/cassandra/conf/cassandra.yaml``` to enable remote connection to cluster. Change values of ```rpc_address``` and ```broadcast_rpc_address``` accordingly
+If it doesn't help, edit Cassandra settings file ```/etc/cassandra/conf/cassandra.yaml``` to enable remote connection to cluster. Change values of ```rpc_address``` and ```broadcast_rpc_address``` accordingly (given 192.168.10.100 is address of computer where Cassandra is running). 
 ```
 rpc_address: 0.0.0.0
 broadcast_rpc_address: 192.168.10.100
